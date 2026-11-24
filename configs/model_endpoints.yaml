@@ -1,0 +1,23 @@
+agent_endpoints:
+  deepseek-v3.2:
+    model_id: deepseek/deepseek-v3.2
+    temperature: 0.0
+    max_tokens: null
+  gpt-4o:
+    model_id: openai/gpt-4o
+    temperature: 0.0
+    max_tokens: null
+  gemini-3-flash:
+    model_id: google/gemini-3-flash-preview
+    temperature: 0.0
+    max_tokens: null
+  claude-haiku-4.5:
+    model_id: anthropic/claude-haiku-4.5
+    temperature: 0.0
+    max_tokens: null
+
+guard_endpoints:
+  deepseek-v3.2:
+    model_id: deepseek/deepseek-v3.2
+    temperature: 0.0
+    max_tokens: 800

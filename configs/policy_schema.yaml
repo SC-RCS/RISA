@@ -1,0 +1,131 @@
+
+protected_roles:
+  destination:
+    description: "Recipient, endpoint, or target location of data transfer"
+    keys:
+      - recipient
+      - recipients
+      - email
+      - emails
+      - phone
+      - address
+      - addresses
+      - url
+      - urls
+      - endpoint
+      - endpoints
+      - webhook
+      - callback
+      - callback_url
+      - destination
+      - destinations
+      - target
+      - targets
+      - to
+      - cc
+      - bcc
+  selector:
+    description: "Name or identifier used to select a resource"
+    keys:
+      - name
+      - names
+      - resource
+      - resources
+      - entity
+      - entities
+      - item
+      - items
+      - account
+      - accounts
+      - file
+      - files
+      - document
+      - documents
+      - venue
+      - venues
+      - property
+      - properties
+      - company
+      - companies
+      - hotel
+      - restaurant
+  payload:
+    description: "Content, message body, or subject of communication"
+    keys:
+      - content
+      - message
+      - body
+      - description
+      - text
+      - payload
+      - note
+      - comment
+      - summary
+      - subject
+      - title
+      - attachment
+      - attachments
+  temporal:
+    description: "Date, time, or scheduling values"
+    keys:
+      - date
+      - dates
+      - time
+      - times
+      - start
+      - end
+      - day
+      - days
+      - start_date
+      - end_date
+      - start_day
+      - end_day
+      - start_time
+      - end_time
+  sensitive:
+    description: "Security credentials or sensitive values"
+    keys:
+      - password
+      - secret
+      - token
+      - credential
+      - credentials
+      - api_key
+      - private_key
+      - security_code
+      - otp
+      - verification_code
+
+effect_classes:
+  no_side_effect:
+    description: "Read-only operations with no state change"
+    examples: [search, query, get, read, list, fetch, find, lookup, check, inspect, view]
+  state_mutation:
+    description: "Operations that modify system or application state"
+    examples: [write, edit, update, modify, set, create, add, append, insert, replace]
+  external_communication:
+    description: "Operations that send data to external entities"
+    examples: [send, post, submit, upload, share, publish, notify, invite, message, email]
+  sharing:
+    description: "Operations that expose data to other users or systems"
+    examples: [share, invite, publish, expose, grant, attach]
+  deletion:
+    description: "Operations that remove data or resources"
+    examples: [delete, remove, erase, wipe, drop, destroy]
+  financial:
+    description: "Operations involving monetary transactions"
+    examples: [pay, transfer, withdraw, deposit, purchase, refund, charge]
+  code_execution:
+    description: "Operations that execute arbitrary code"
+    examples: [run, exec, execute, deploy, install, launch, start]
+  security_account:
+    description: "Operations affecting authentication or authorization"
+    examples: [login, logout, password, credential, auth, token, verify, reset]
+  commitment:
+    description: "Operations that create binding commitments"
+    examples: [book, schedule, reserve, confirm, register, enroll]
+  unknown_high_risk:
+    description: "Operations that cannot be classified and are treated as high-risk"
+    examples: []
+
+
